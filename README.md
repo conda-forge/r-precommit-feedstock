@@ -1,11 +1,11 @@
-About r-precommit
-=================
+About r-precommit-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-precommit-feedstock/blob/main/LICENSE.txt)
 
 Home: https://lorenzwalthert.github.io/precommit/, https://github.com/lorenzwalthert/precommit
 
 Package license: GPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-precommit-feedstock/blob/main/LICENSE.txt)
 
 Summary: Useful git hooks for R building on top of the multi-language framework 'pre-commit' for hook management. This package provides git hooks for common tasks like formatting files with 'styler' or spell checking as well as wrapper functions to access the 'pre-commit' executable.
 
