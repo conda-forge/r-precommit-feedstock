@@ -1,4 +1,4 @@
-{% set version = '0.3.2' %}
+{% set version = "0.4.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/precommit_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/precommit/precommit_{{ version }}.tar.gz
-  sha256: 146e84084a8771461ca577b89d3f22a31196e4c853cde1a5d338cdf082d01729
+  sha256: 95b51ee58a4a52d7278852b6cb0c74b529e3b1439e03338b1fe9351277afdd21
 
 build:
-  merge_build_host: True  # [win]
-  number: 2
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -59,10 +59,7 @@ test:
 about:
   home: https://lorenzwalthert.github.io/precommit/, https://github.com/lorenzwalthert/precommit
   license: GPL-3.0-or-later
-  summary: Useful git hooks for R building on top of the multi-language framework 'pre-commit'
-    for hook management. This package provides git hooks for common tasks like formatting
-    files with 'styler' or spell checking as well as wrapper functions to access the
-    'pre-commit' executable.
+  summary: Useful git hooks for R building on top of the multi-language framework 'pre-commit' for hook management. This package provides git hooks for common tasks like formatting files with 'styler' or spell checking as well as wrapper functions to access the 'pre-commit' executable.
   license_family: GPL3
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
