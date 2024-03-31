@@ -1,4 +1,4 @@
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/precommit_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/precommit/precommit_{{ version }}.tar.gz
-  sha256: 95b51ee58a4a52d7278852b6cb0c74b529e3b1439e03338b1fe9351277afdd21
+  sha256: 8f7f380cf212efa9cbbd287e516d1e19add9fc369d7f376f9e1e222c89522f13
 
 build:
   merge_build_host: true  # [win]
