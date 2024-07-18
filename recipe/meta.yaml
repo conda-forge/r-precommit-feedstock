@@ -1,6 +1,5 @@
 {% set version = "0.4.2" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-precommit
@@ -13,8 +12,7 @@ source:
   sha256: c73d9c0afd1ce716fab1a67c7bebbb9443a3ebf3796dbc537aef70352a229496
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
