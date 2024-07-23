@@ -1,4 +1,4 @@
-{% set version = "0.4.2" %}
+{% set version = "0.4.3" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/precommit_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/precommit/precommit_{{ version }}.tar.gz
-  sha256: c73d9c0afd1ce716fab1a67c7bebbb9443a3ebf3796dbc537aef70352a229496
+  sha256: b1be36cea51026c249c108cfaaee0cc838e67a1d1b91422abee40f6c72de0566
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
